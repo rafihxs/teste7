@@ -1,0 +1,2 @@
+
+function toggleExtras(){const btn=document.getElementById('extraToggle');const show=btn.getAttribute('aria-expanded')!=='true';btn.setAttribute('aria-expanded',String(show));btn.textContent=show?'✕ Ocultar ferramentas':'🧰 Mais ferramentas';document.querySelectorAll('.feature-section,.pet-tools').forEach(x=>{if(x.id!=='assistant-section')x.classList.toggle('visible',show)});document.querySelector('.brandbar')?.classList.toggle('visible',show)}
